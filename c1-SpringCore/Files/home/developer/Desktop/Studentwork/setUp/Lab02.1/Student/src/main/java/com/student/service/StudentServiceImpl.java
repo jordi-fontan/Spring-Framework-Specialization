@@ -18,8 +18,8 @@ public class StudentServiceImpl implements StudentService {
 
 	@Override
 	public Collection<Student> getAllStudents() {
-		//return studentDao.getAll();
-		return studentDao.getAll().stream().limit(numberOfStudents).collect(Collector.toList());
+		return studentDao.getAll();
+		//return studentDao.getAll().stream().limit(numberOfStudents).collect(Collector.toList());
 	}
 
 }

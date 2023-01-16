@@ -6,10 +6,16 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans spring-beans-4.0.xsd
     http://www.springframework.org/schema/context spring-context-4.0.xsd">
   
- 
+<!--  Lab 2.1
+In your starter directory, import the project for Lab02.1 i.e. Student
+This is a Spring Boot Maven project with classes already populated in it and
+the Spring Boot Starter dependencies in the maven pom
+In the provided beans.xml define a single BeanDefinition for
+StudentServiceImpl with an id of “studentService”
+ -->
  <bean id="studentService" name="" class="com.student.service.StudentServiceImpl">
-	 <property name="numberOfStudents" value="2"/>
-	 <property name="studentDao" ref="dao"/>
+	 <!-- <property name="numberOfStudents" value="2"/>   -->
+	 <!--  <property name="studentDao" ref="dao"/>  -->
  </bean>
  <bean id="dao" name="" class="com.student.dao.StudentDaoImpl">
  
