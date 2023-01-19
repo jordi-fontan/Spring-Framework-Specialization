@@ -17,7 +17,15 @@ StudentServiceImpl with an id of “studentService”
 	 <!-- <property name="numberOfStudents" value="2"/>   -->
 	 <!--  <property name="studentDao" ref="dao"/>  -->
  </bean>
- <bean id="dao" name="" class="com.student.dao.StudentDaoImpl">
+ <bean id="dao" name="" class="com.student.dao.StudentDaoImpl"/>
  
+ <bean id="vehicle" name="" class="com.dalneg.vehicles.Car">
+	  <property name="fuel" value="2"/>   
+	 <!--  <property name="studentDao" ref="dao"/>  -->
  </bean>
+ <bean id="driver" name="" class="com.dalneg.vehicles.Driver">
+	  <property name="driverName" value="Frenando Haloncho"/>   
+	  <property name="vehicle" ref="vehicle"/> 
+ </bean>
+ 
 </beans>
